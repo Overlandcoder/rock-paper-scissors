@@ -1,15 +1,13 @@
 
 
-html, body {
+body {
     background-color: #3b3b3b;
     font-size: 20px;
 }
-.row {
-    margin: 0 auto;
-    width: 50%;
+.buttons {
     display: flex;
     justify-content: center;
-    padding-top: 250px;
+    margin-top: 100px;
     padding-bottom: 50px;
 }
 
@@ -22,6 +20,7 @@ html, body {
     padding: 10px 30px;
     justify-content: center;
     margin-right: 20px;
+    width: 250px;
 }
 
 .btn:hover,
@@ -30,11 +29,24 @@ html, body {
     cursor: pointer;
 }
 
-.score {
-    display: flex;
+.game-result {
+    margin-top: 25px;
+    display: grid;
     justify-content: center;
+    font-size: 150%;
+}
+
+.score {
+    display: grid;
+    justify-content: center;    
+    color: #ccc;
 }
 
 .score li {
     list-style: none;
+}
+
+.round-result {
+    display: grid;
+    justify-content: center;
 }
