@@ -1,0 +1,40 @@
+
+
+html, body {
+    background-color: #3b3b3b;
+    font-size: 20px;
+}
+.row {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+    padding-bottom: 50px;
+}
+
+.btn {
+    color: #fff;
+    font-size: 30px;
+    background-color: #83df4e;
+    border: 1px solid #79ce48;
+    border-radius: 10px;
+    padding: 10px 30px;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.btn:hover,
+.btn:active {
+    color: #3b3b3b;
+    cursor: pointer;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+}
+
+.score li {
+    list-style: none;
+}
