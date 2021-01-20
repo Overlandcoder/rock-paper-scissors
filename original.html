@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+    <script>
+    // Your JavaScript goes here!
+    
+
+    const computerSelection = computerPlay();
+    let playerScore = 0;
+    let computerScore = 0;
+
+    function playRound() {
+        computerPlay();
+        let playerSelection = prompt('Rock paper scissors?', '');
+        if ((computerSelection == 'rock' && playerSelection == 'scissors') || (computerSelection == 'scissors' && playerSelection == 'paper') || (computerSelection == 'paper' && playerSelection == 'rock')) {
+            computerScore += 1;
+            console.log(playerScore, computerScore);
+            return "You lost.";
+        } else if (computerSelection == playerSelection) {
+            console.log(playerScore, computerScore);
+            return "Tie game.";
+        } else {
+            playerScore += 1;
+            console.log(playerScore, computerScore);
+            return "You won!";
+        }
+    }
+
+    function computerPlay() {
+        let options = ['rock', 'paper', 'scissors'];
+        let choice = options[Math.floor(Math.random() * options.length)];
+        return choice;
+    }
+
+    function game() {
+        for (i = 0; i < 5; i++) {
+            playRound();
+        }
+        console.log(playerScore, computerScore);
+        if (computerScore > playerScore) {
+            return "You lost.";
+        } else if (computerScore == playerScore) {
+            return "Tie game.";
+        } else {
+            return "You won!";
+        }
+    }
+
+    </script>
+</body>
+</html>
